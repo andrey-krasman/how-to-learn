@@ -94,9 +94,59 @@ z-index: 1;
   right: 0;
   z-index: -1;
 }
-/* СТИЛИ HEADER ЗАКОНЧИЛИСЬ
+/* СТИЛИ HEADER ЗАКОНЧИЛИСЬ*/
 
-/* СТИЛИ MAIN
+/* СТИЛИ MAIN*/
+
+.content {
+  display: flex;
+}
+
+.description {
+  margin: 100px 0 100px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  color: black;
+  border: 1px solid rgb(89, 0, 255);
+}
+
+.two-colums__brief {
+  border: 1px solid rgb(0, 255, 0);
+  width: 175px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color:  #2f80ed;
+}
+
+.two-colums__main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgb(255, 153, 0);
+  width: 80%;
+  min-width: 784px;
+
+}
+
+.main-text__paragraph {
+  display: flex;
+  margin: 0;
+}
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
