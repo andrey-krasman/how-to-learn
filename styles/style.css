@@ -33,7 +33,7 @@ z-index: 1;
   height: 32px;
 }
 
-.title {
+.header__title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +51,7 @@ z-index: 1;
   color: black;
 }
 
-.subtitle{
+.header__subtitle{
   position: absolute;
   bottom:30px;
   left: 64px;
@@ -251,6 +251,54 @@ z-index: 1;
   font-weight: normal;
 
 }
+
+/* СТИЛИ ДЛЯ КАУФМАН */
+
+.feynman {
+  height: 890px;
+  position: relative;
+  border: 1px solid red;
+}
+
+.feynman__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 867px;
+  height: 637px;
+  z-index: -1;
+}
+
+.feynman__title {
+  color: black;
+  margin: 100px auto 0;
+  width: 648px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.feynman__subtitle {
+  color: black;
+  margin: 70px auto 0;
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  color: #2f80ed;
+  text-align: right;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+}
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
