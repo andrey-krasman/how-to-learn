@@ -7,7 +7,6 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: #f2f2f2;
 }
 
 .header {
@@ -17,6 +16,8 @@
   display: flex;
   position: relative;
   margin: 0;
+  background-color: #f2f2f2;
+  z-index: -2;
   /* выше установили ограничения для секции */
 }
 
@@ -221,6 +222,8 @@ z-index: 1;
 
 .cell {
   margin: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .table__cell {
@@ -241,11 +244,11 @@ z-index: 1;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin: 20px 0 20px;
+  margin: 20px 0 0;
 }
 
 .text_nether {
-  margin: 0;
+  margin: 20px 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -258,6 +261,8 @@ z-index: 1;
   height: 890px;
   position: relative;
   border: 1px solid red;
+  background-color: #f2f2f2;
+  z-index: -1;
 }
 
 .feynman__image {
@@ -299,6 +304,33 @@ z-index: 1;
   top: 50%;
 }
 
+/* СТИЛИ ДЛЯ  */
+
+.kaufman {
+  margin: 0;
+  background-color: black;
+  z-index: -2;
+  display: flex;
+  position: relative;
+  padding: 90px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+  overflow: hidden;
+}
+
+.kaufman__triangle {
+  margin: 0;
+  position: absolute;
+  width: 877px;
+  height: 877px;
+  right: -210px;
+  top: 0;
+  z-index: -1;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
+}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -306,4 +338,29 @@ z-index: 1;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.section-title__text_theme_dark {
+  color: white;
+}
+
+.section-subtitle__text_theme_dark {
+  color: white;
+}
+
+/* FOOOOOTEEEER */
+
+.footer {
+  padding: 60px 0 40px;
+  border: 1px solid red;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-width: 350px;
+}
+
+.footer__columns {
+  width: 90%;
+  border: 1px solid rgb(255, 0, 221);
+
 }
