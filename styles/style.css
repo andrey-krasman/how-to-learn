@@ -1,13 +1,11 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+
+/* СТИЛИ HEADER */
 
 .header {
   height: 100vh;
@@ -18,14 +16,9 @@
   margin: 0;
   background-color: #f2f2f2;
   z-index: 0;
-  /* выше установили ограничения для секции */
 }
 
-
-.logo {
-}
-
-.logo_place_header {
+.header__logo {
   position: absolute;
   top:30px;
   left: 64px;
@@ -64,37 +57,31 @@
   color: black;
 }
 
-.link {
+.header__link {
+  text-decoration: none;
   color: #2f80ed;
 }
 
-.subtitle__link {
-  text-decoration: none;
-}
-
-.main-illustration{
+.header__main-illustration{
   position: absolute;
   width: 765px;
   height: 608px;
   background-size: contain;
-}
-.main-illustration_place {
   bottom: 0;
   right: 0;
+  z-index: 0;
 }
 
-.square-pic {
+.header__square-pic {
   position: absolute;
   background-color: #2f80ed;
-}
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
   height: 568px;
   width: 568px;
   top: 64px;
   right: 0;
   z-index: -1;
 }
+
 /* СТИЛИ HEADER ЗАКОНЧИЛИСЬ*/
 
 /* СТИЛИ MAIN*/
@@ -105,13 +92,14 @@
   flex-direction: column;
 }
 
+/* СТИЛИ DESCRIPTION */
+
 .description {
   margin: 100px auto 100px;
   display: flex;
   position: relative;
   flex-direction: row;
   justify-content: center;
-  /* border: 1px solid rgb(255, 0, 221); */
 }
 
 .two-columns {
@@ -139,7 +127,7 @@
   justify-content: space-between;
   margin: 0;
   width: 80%;
-  min-width: 784;
+  min-width: 784px;
   color: black;
 }
 
@@ -164,7 +152,7 @@
   font-weight: 600;
 }
 
-/* СТИЛИ ДЛЯ DIGITS */
+/* СТИЛИ DIGITS */
 
 .digits {
   margin: 0 auto 100px;
@@ -174,7 +162,6 @@
   justify-content: center;
   align-items: center;
   color: black;
-  /* border: 1px solid blue; */
 }
 
 .section-title {
@@ -252,23 +239,13 @@
 
 }
 
-/* СТИЛИ ДЛЯ КАУФМАН */
+/* СТИЛИ FEYNMAN */
 
 .feynman {
   height: 890px;
   position: relative;
-  /* border: 1px solid red; */
   background-color: #f2f2f2;
   z-index: 0; 
-}
-
-.feynman__image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 867px;
-  height: 637px;
-  z-index: -1;
 }
 
 .feynman__title {
@@ -301,7 +278,16 @@
   top: 50%;
 }
 
-/* СТИЛИ ДЛЯ  */
+.feynman__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 867px;
+  height: 637px;
+  z-index: -1;
+}
+
+/* СТИЛИ KAUFMAN */
 
 .kaufman {
   margin: 0;
@@ -313,7 +299,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid blue; */
   overflow: hidden;
 }
 
@@ -329,7 +314,6 @@
   background-size: cover;
 }
 
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -345,10 +329,11 @@
   color: white;
 }
 
-/* FOOOOOTEEEER */
+/* СТИЛИ MAIN ЗАКОНЧИЛИСЬ */
+
+/* FOTER */
 
 .footer {
-  /* border: 1px solid red; */
   position: relative;
   display: flex;
   justify-content: center;
@@ -359,7 +344,6 @@
 .footer__columns {
   margin: 60px 0 40px;
   width: 90%;
-  /* border: 1px solid rgb(255, 0, 221); */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -367,7 +351,6 @@
 
 .footer__column_content_copyright {
   flex-basis: 711px;
-  /* border: 1px solid rgb(0, 255, 21); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -389,7 +372,6 @@
 }
 
 .footer__column_content_info {
-  /* border: 1px solid rgb(0, 183, 255); */
   color: white;
 }
 
@@ -421,7 +403,6 @@
 
 
 .footer__column_content_social {
-  /* border: 1px solid rgb(251, 255, 0); */
   color: white;
 }
 
@@ -439,3 +420,5 @@
   height: 16px;
   margin-right: 10px;
 }
+
+/* СТИЛИ FOOTER ЗАКОНЧИЛИСЬ */
