@@ -37,6 +37,7 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
+  z-index: 1;
 }
 
 .header__subtitle{
@@ -48,6 +49,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 1;
 }
 
 .header__link {
@@ -62,6 +64,7 @@
   background-size: contain;
   bottom: 0;
   right: 0;
+  z-index: 0;
 }
 
 .header__square-pic {
