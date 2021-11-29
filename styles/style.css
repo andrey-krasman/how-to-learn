@@ -19,11 +19,11 @@
 
 .logo {
   margin: 0;
-  position: absolute;
   width: 183px;
 }
 
 .logo_place_header {
+  position: absolute;
   top:30px;
   left: 64px;
   height: 32px;
@@ -31,7 +31,6 @@
 
 .header__title {
   margin: 0;
-  position: absolute;
   align-self: center;
   width: 730px;
   margin-left: 64px;
@@ -119,7 +118,7 @@
   min-width: 784px;
 }
 
-.main-text__paragraph {
+.two-columns__paragraph {
   margin: 0;
   line-height: 34px;
   font-size: 24px;
@@ -269,6 +268,7 @@
   top: 0;
   background-image: url(../images/kaufman-triangle.svg);
   background-size: cover;
+  z-index: 0;
 }
 
 .table__cell_theme_dark {
@@ -284,10 +284,12 @@
 
 .section-title_theme_dark {
   color: white;
+  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
   color: white;
+  z-index: 1;
 }
 
 /* СТИЛИ MAIN ЗАКОНЧИЛИСЬ */
@@ -315,20 +317,20 @@
 
 .footer__column_content_copyright {
   flex-basis: 711px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   height: 35px;
 }
 
 .footer__author {
-  margin: 0;
+  margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  position: absolute;
-  bottom: 18px;
 }
 
 .footer__column-heading {
