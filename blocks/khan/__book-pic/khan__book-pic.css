@@ -1,10 +1,10 @@
 .khan__book-pic {
-    width: 620px;
-    height: 608px;
-    object-fit: cover;
-    object-position: 0% 0%;
+  width: 620px;
+  height: 608px;
+  object-fit: cover;
+  object-position: 0% 0%;
 }
 
 .khan__book-pic:nth-child(1) {
-    margin-right: 48px;
+  margin-right: 48px;
 }
