@@ -1,11 +1,16 @@
 .footer__column-link {
-    line-height: 30px;
-    font-size: 18px;
-    font-weight: normal;
-    text-decoration: none;
-    color: white;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: opacity 1s ease 0.2s;
+}
+
+.footer__column-link:hover {
+  opacity: 0.3;
+}
